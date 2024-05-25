@@ -1,0 +1,10 @@
+{% extends "../base.html" %} 
+{%block content%} 
+
+Hello, total users = {{ count }}
+{% for user in total %}
+<li>{{user.name}} - {{user.email}}</li>
+{% endfor %}
+
+
+{%endblock%}
